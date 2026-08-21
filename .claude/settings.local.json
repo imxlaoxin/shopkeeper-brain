@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la .cursor .github .claude)",
+      "Bash(find . -maxdepth 2 -iname \"*.md\" -not -path \"*.venv*\" -not -path \"*/node_modules/*\")",
+      "Bash(ls -la .cursorrules .github/copilot-instructions.md)",
+      "Bash(ls -la .github/workflows)",
+      "Bash(find . -maxdepth 3 -iname \"Dockerfile*\" -not -path \"*.venv*\")",
+      "Bash(find . -maxdepth 2 \\\\\\( -iname \"Makefile\" -o -iname \"tox.ini\" -o -iname \"pytest.ini\" -o -iname \"*.cfg\" -o -iname \"MANIFEST.in\" \\\\\\) -not -path \"*.venv*\")",
+      "Bash(find . -maxdepth 2 \\\\\\( -name \"setup.py\" -o -name \"pyproject.toml\" \\\\\\) -not -path \"*.venv*\")",
+      "Bash(grep -rn \"version\" requirements.txt)",
+      "Bash(.venv/Scripts/python.exe --version)",
+      "Bash(python --version)"
+    ]
+  }
+}
